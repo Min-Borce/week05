@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div class="col-md-12 user-container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <!-- <th class="hidden">Id</th> -->
+                <th>Name</th>
+                <th>Address</th>
+                <th>Pin Code</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <!-- <td class="hidden">{{user.id}}</td> -->
+                <td>{{user.name}}</td>
+                <td>{{user.address}}</td>
+                <td>{{user.pinCode}}</td>
+                <td>{{user.city}}</td>
+                <td>{{user.country}}</td>
+                <td>
+
+
+
+                    <button type="button " class="btn btn-default btn - sm " (click)="readUser(user)"> <span class = "glyphicon glyphicon-eye-open"> </span> </button>
+                    <button type="button " (click)="editUser(user)" class="btn btn-default btn - sm "> <span class = "glyphicon glyphicon-pencil"> </span> </button>
+                    <!-- <button type="button " style="display: none" class="btn btn-edit btn-default btn - sm "> <span class = "glyphicon glyphicon-floppy-saved"> </span> </button> -->
+                    <button type="button " class="btn btn-default btn - sm " (click)="deleteUser(user)" data-toggle="modal" data-target=".bs-example-modal-sm"> <span class = "glyphicon glyphicon-trash"> </span> </button>
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

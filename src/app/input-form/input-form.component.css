@@ -1,0 +1,12 @@
+#submit {
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+#add-new-member {
+  display: none;
+  padding: 2%;
+  background-color: red; }
+
+label {
+  float: left;
+  clear: both; }

@@ -1,0 +1,77 @@
+<!-- <a routerLink='/product'> + Add Product</a> -->
+
+<div class="container ">
+    <!-- <div>
+        <h2>
+            Please fill this boxes to add new member
+        </h2>
+        <br>
+    </div> -->
+    <!-- <input type="button" class="btn btn-primary" (click)="toggle()" id="add-new" value=" ADD "> -->
+
+    <div class="row " id="add-new-member ">
+
+
+
+
+
+        <!-- <form id="myTable ">
+
+            <div class="form-group col-sm-8 ">
+                <label class=" col-sm-2 control-label ">Name<abbr title="This field is mandatory "></abbr></label>
+                <div class="col-sm-6 ">
+                    <input class=" form-control " [(ngModel)]="name" id="flname " type="text " placeholder="Name ">
+                </div>
+            </div>
+            <div class="form-group col-sm-8 ">
+                <label class=" col-sm-2 control-label ">Address</label>
+                <div class="col-sm-6 ">
+                    <input class="form-control " id="address " type="text " placeholder="Address ">
+                </div>
+            </div>
+            <div class="form-group col-sm-8 ">
+                <label class="col-sm-2 control-label ">City</label>
+                <div class="col-sm-6 ">
+                    <input class="form-control " id="city " type="text " placeholder="City ">
+                </div>
+            </div>
+            <div class="form-group col-sm-8 ">
+                <label class="col-sm-2 control-label ">Pin Code</label>
+                <div class="col-sm-6 ">
+                    <input class="form-control " id="pinCode " type="number " placeholder="Pin Code ">
+                </div>
+            </div>
+
+            <div class="form-group col-sm-8 ">
+                <label class="col-sm-2 control-label ">Country</label>
+                <div class="col-sm-6 ">
+                    <input list="country " name="country " id="focusedInput " class="form-control datalist-input " placeholder="Select Country " />
+                    <datalist id="country ">
+                        <option value=" " selected="selected ">Select Country</option>
+                        <option value="United States ">United States</option>
+                        <option value="United Kingdom ">United Kingdom</option>
+                    </datalist>
+                </div>
+            </div>
+
+        </form> -->
+
+
+        <!-- <table>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Color</th>
+            <th></th>
+            <th></th>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.color}}</td>
+                <td (click)="deleteProduct(product.id)"><a>DELETE</a></td>
+                <td [routerLink]="['/updateProduct', product.id]"><a>UPDATE</a></td>
+            </tr>
+        </table> -->
+        <button type="reset " class=" submit-button btn btn-primary " (click)="submitForm() " id="submit " value="Submit ">Submit
+   </button>
+    </div>
+</div>
